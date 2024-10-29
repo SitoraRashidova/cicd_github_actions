@@ -31,7 +31,7 @@ jobs:
               cd $APP_DIR
               echo 'PORT=${PORT}'' > .env
             else
-              cd $$APP_DIR
+              cd $APP_DIR
               git pull origin main
             fi
             npm install
